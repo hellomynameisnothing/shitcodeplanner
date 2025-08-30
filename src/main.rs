@@ -17,6 +17,8 @@ struct Plan {
 fn main() {
     let store_path = "plans.jsonl";
 
+
+
     // Show existing plans
     if let Ok(file) = std::fs::File::open(store_path) {
         println!("=== Existing plans ===");
