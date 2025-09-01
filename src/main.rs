@@ -56,6 +56,14 @@ fn run(mut terminal: DefaultTerminal, app_state: &mut AppState) -> Result<()> {
 	Ok(())
 }
 
+
+fn foo() {
+	bar();
+}
+fn bar() {
+	()
+}
+
 fn render(frame: &mut Frame, app_state: &mut AppState) {
 	let [border_area] = Layout::vertical([Constraint::Fill(1)])
 		.margin(1)
